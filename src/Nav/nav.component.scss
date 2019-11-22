@@ -2,7 +2,7 @@
     color: #ced4da;
 }
 ul li{
-    padding: 10px 30px;
+    padding: 10px 0px 15px 20px;
 }
 .nav{
     height: 100%;
@@ -15,4 +15,11 @@ ul li a{
 }
 .nav-footer{
     background-color: #354052;
+}
+.fa{
+    display: inline-block;
+    margin-left: 6.24em;
+}
+ul li ul li{
+    list-style-type: none;
 }

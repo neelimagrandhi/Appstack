@@ -10,6 +10,9 @@ import { CommonModule } from '@angular/common';
 import { Layoutcomponent } from 'src/layout/layout.component';
 import { HttpClientModule } from "@angular/common/http";
 import { Footercomponent } from 'src/footer/footer.component';
+import { Profilecomponent } from 'src/profile/profile.component';
+import { Settingscomponent } from 'src/settings/settings.component';
+import { Signincomponent } from 'src/signin/signin.component';
 const Routes=[
   {
     path:"",
@@ -20,8 +23,20 @@ const Routes=[
     path:"table",
     component: Tablecomponent
   },{
-path:"layout",
-component: Layoutcomponent
+    path:"layout",
+     component: Layoutcomponent
+    },
+  {
+    path:"profile",
+    component: Profilecomponent
+  },
+{
+  path:"settings",
+  component: Settingscomponent
+},
+{
+  path:"signin",
+  component: Signincomponent
 }]
 @NgModule({
   declarations: [
@@ -30,7 +45,10 @@ component: Layoutcomponent
     Sidebarcomponent,
     Tablecomponent,
     Layoutcomponent,
-    Footercomponent
+    Footercomponent,
+    Profilecomponent,
+    Settingscomponent,
+    Signincomponent
   ],
   imports: [
     BrowserModule,
